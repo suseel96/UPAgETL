@@ -1,0 +1,109 @@
+{
+  "timestamp_log": "2023-12-19T16:34:45.137558+0530",
+  "received_object": {
+    "payload": {
+      "signature": "signature string",
+      "header": {
+        "version": "1.0.0",
+        "message_id": "789",
+        "message_ts": "2022-12-04T18:02:35+00:00",
+        "action": "string",
+        "status": "rcvd",
+        "status_reason_code": "rjct.version.invalid",
+        "status_reason_message": "string",
+        "total_count": 1,
+        "completed_count": 1,
+        "sender_id": "https:agristack.gov.in",
+        "receiver_id": "registry.example.org",
+        "is_msg_encrypted": false
+      },
+      "message": {
+        "transaction_id": "cd3ab0a0-0fa2-4696-bd65-782daa74a030",
+        "correlation_id": "508d9b6a-a6d9-45f1-8512-0ec3432d5f8c",
+        "search_response": [
+          {
+            "reference_id": "e1515b2f-5090-4bd7-ab2a-8e4c46221cea",
+            "data": {
+              "reg_record_type": "agristack_croparea_v0_data",
+              "reg_records": [
+                {
+                  "district_name": "MORADABAD",
+                  "village_name": "Baru Bhura",
+                  "crop_code": "101701",
+                  "crop_name": "Rice",
+                  "sown_area": "0.387",
+                  "village_lgd_code": "115068",
+                  "year": "2023-2024",
+                  "irrigation_type": "Well",
+                  "survey_status": "Approved",
+                  "area_unit": "Hectare",
+                  "season": "Kharif"
+                }
+              ]
+            }
+          }
+        ],
+        "pagination": {
+          "page_size": 1,
+          "page_number": 1,
+          "total_count": 103030
+        },
+        "locale": "en"
+      }
+    }
+  },
+  "validated_object": {
+    "payload": {
+      "message": {
+        "locale": "en",
+        "transaction_id": "cd3ab0a0-0fa2-4696-bd65-782daa74a030",
+        "pagination": {
+          "page_size": 1,
+          "page_number": 1,
+          "total_count": 103030
+        },
+        "search_response": [
+          {
+            "reference_id": "e1515b2f-5090-4bd7-ab2a-8e4c46221cea",
+            "data": {
+              "reg_record_type": "agristack_croparea_v0_data",
+              "reg_records": [
+                {
+                  "village_lgd_code": "115068",
+                  "area_unit": "Hectare",
+                  "crop_code": "101701",
+                  "survey_status": "Approved",
+                  "sown_area": "0.387",
+                  "irrigation_type": "Well",
+                  "year": "2023-2024",
+                  "season": "Kharif",
+                  "village_name": "Baru Bhura",
+                  "crop_name": "Rice",
+                  "district_name": "MORADABAD"
+                }
+              ]
+            }
+          }
+        ],
+        "correlation_id": "508d9b6a-a6d9-45f1-8512-0ec3432d5f8c"
+      },
+      "header": {
+        "version": "1.0.0",
+        "status_reason_message": "string",
+        "sender_id": "https:agristack.gov.in",
+        "status": "rcvd",
+        "total_count": 1,
+        "completed_count": 1,
+        "is_msg_encrypted": false,
+        "status_reason_code": "rjct.version.invalid",
+        "receiver_id": "registry.example.org",
+        "message_ts": "2022-12-04T18:02:35+00:00",
+        "message_id": "789",
+        "action": "string"
+      },
+      "signature": "signature string"
+    }
+  },
+  "is_validated": true,
+  "validation_error_object": null
+}

@@ -1,0 +1,109 @@
+{
+  "timestamp_log": "2023-12-19T16:34:15.173832+0530",
+  "received_object": {
+    "payload": {
+      "signature": "signature string",
+      "header": {
+        "version": "1.0.0",
+        "message_id": "789",
+        "message_ts": "2022-12-04T18:02:35+00:00",
+        "action": "string",
+        "status": "rcvd",
+        "status_reason_code": "rjct.version.invalid",
+        "status_reason_message": "string",
+        "total_count": 1,
+        "completed_count": 1,
+        "sender_id": "https:agristack.gov.in",
+        "receiver_id": "registry.example.org",
+        "is_msg_encrypted": false
+      },
+      "message": {
+        "transaction_id": "9f7e7dd3-3832-4e44-9feb-3e8df110e9ee",
+        "correlation_id": "476624a6-8d2a-41de-933d-4594005a6689",
+        "search_response": [
+          {
+            "reference_id": "6324e45a-6b5f-4882-a57b-b980300f4052",
+            "data": {
+              "reg_record_type": "agristack_croparea_v0_data",
+              "reg_records": [
+                {
+                  "district_name": "BHADRAK",
+                  "village_name": "Khanabadi",
+                  "crop_code": "101701",
+                  "crop_name": "Rice",
+                  "sown_area": "4.721",
+                  "village_lgd_code": "394874",
+                  "year": "2023-2024",
+                  "irrigation_type": "Borewell",
+                  "survey_status": "Approved",
+                  "area_unit": "Hectare",
+                  "season": "Kharif"
+                }
+              ]
+            }
+          }
+        ],
+        "pagination": {
+          "page_size": 1,
+          "page_number": 1,
+          "total_count": 2782
+        },
+        "locale": "en"
+      }
+    }
+  },
+  "validated_object": {
+    "payload": {
+      "message": {
+        "locale": "en",
+        "transaction_id": "9f7e7dd3-3832-4e44-9feb-3e8df110e9ee",
+        "pagination": {
+          "page_size": 1,
+          "page_number": 1,
+          "total_count": 2782
+        },
+        "search_response": [
+          {
+            "reference_id": "6324e45a-6b5f-4882-a57b-b980300f4052",
+            "data": {
+              "reg_record_type": "agristack_croparea_v0_data",
+              "reg_records": [
+                {
+                  "village_lgd_code": "394874",
+                  "area_unit": "Hectare",
+                  "crop_code": "101701",
+                  "survey_status": "Approved",
+                  "sown_area": "4.721",
+                  "irrigation_type": "Borewell",
+                  "year": "2023-2024",
+                  "season": "Kharif",
+                  "village_name": "Khanabadi",
+                  "crop_name": "Rice",
+                  "district_name": "BHADRAK"
+                }
+              ]
+            }
+          }
+        ],
+        "correlation_id": "476624a6-8d2a-41de-933d-4594005a6689"
+      },
+      "header": {
+        "version": "1.0.0",
+        "status_reason_message": "string",
+        "sender_id": "https:agristack.gov.in",
+        "status": "rcvd",
+        "total_count": 1,
+        "completed_count": 1,
+        "is_msg_encrypted": false,
+        "status_reason_code": "rjct.version.invalid",
+        "receiver_id": "registry.example.org",
+        "message_ts": "2022-12-04T18:02:35+00:00",
+        "message_id": "789",
+        "action": "string"
+      },
+      "signature": "signature string"
+    }
+  },
+  "is_validated": true,
+  "validation_error_object": null
+}

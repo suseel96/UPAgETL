@@ -1,0 +1,81 @@
+{
+  "timestamp_log": "2023-12-19T16:34:27.469986+0530",
+  "received_object": {
+    "payload": {
+      "signature": "signature string",
+      "header": {
+        "version": "1.0.0",
+        "message_id": "789",
+        "message_ts": "2022-12-04T18:02:35+00:00",
+        "action": "string",
+        "status": "rcvd",
+        "status_reason_code": "rjct.version.invalid",
+        "status_reason_message": "string",
+        "total_count": 1,
+        "completed_count": 1,
+        "sender_id": "https:agristack.gov.in",
+        "receiver_id": "registry.example.org",
+        "is_msg_encrypted": false
+      },
+      "message": {
+        "transaction_id": "b6f3e4b8-cd82-470a-a002-01fef109b3cd",
+        "correlation_id": "cff9be77-27b9-4178-82d7-e0009a397c50",
+        "search_response": [
+          {
+            "reference_id": "747346ea-a470-49d9-84be-f0ac2916bfb8",
+            "data": {
+              "reg_record_type": "agristack_croparea_v0_data",
+              "reg_records": []
+            }
+          }
+        ],
+        "pagination": {
+          "page_size": 0,
+          "page_number": 1,
+          "total_count": 0
+        },
+        "locale": "en"
+      }
+    }
+  },
+  "validated_object": {
+    "payload": {
+      "message": {
+        "locale": "en",
+        "transaction_id": "b6f3e4b8-cd82-470a-a002-01fef109b3cd",
+        "pagination": {
+          "page_size": 0,
+          "page_number": 1,
+          "total_count": 0
+        },
+        "search_response": [
+          {
+            "reference_id": "747346ea-a470-49d9-84be-f0ac2916bfb8",
+            "data": {
+              "reg_record_type": "agristack_croparea_v0_data",
+              "reg_records": []
+            }
+          }
+        ],
+        "correlation_id": "cff9be77-27b9-4178-82d7-e0009a397c50"
+      },
+      "header": {
+        "version": "1.0.0",
+        "status_reason_message": "string",
+        "sender_id": "https:agristack.gov.in",
+        "status": "rcvd",
+        "total_count": 1,
+        "completed_count": 1,
+        "is_msg_encrypted": false,
+        "status_reason_code": "rjct.version.invalid",
+        "receiver_id": "registry.example.org",
+        "message_ts": "2022-12-04T18:02:35+00:00",
+        "message_id": "789",
+        "action": "string"
+      },
+      "signature": "signature string"
+    }
+  },
+  "is_validated": true,
+  "validation_error_object": null
+}
