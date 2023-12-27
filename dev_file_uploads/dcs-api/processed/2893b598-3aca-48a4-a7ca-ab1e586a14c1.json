@@ -1,0 +1,109 @@
+{
+  "timestamp_log": "2023-12-19T16:34:34.466308+0530",
+  "received_object": {
+    "payload": {
+      "signature": "signature string",
+      "header": {
+        "version": "1.0.0",
+        "message_id": "789",
+        "message_ts": "2022-12-04T18:02:35+00:00",
+        "action": "string",
+        "status": "rcvd",
+        "status_reason_code": "rjct.version.invalid",
+        "status_reason_message": "string",
+        "total_count": 1,
+        "completed_count": 1,
+        "sender_id": "https:agristack.gov.in",
+        "receiver_id": "registry.example.org",
+        "is_msg_encrypted": false
+      },
+      "message": {
+        "transaction_id": "2893b598-3aca-48a4-a7ca-ab1e586a14c1",
+        "correlation_id": "81432f1d-7f9b-41c4-aa03-3ca7c0aa4770",
+        "search_response": [
+          {
+            "reference_id": "32a9da1c-1676-468e-b10e-177ee1320fd2",
+            "data": {
+              "reg_record_type": "agristack_croparea_v0_data",
+              "reg_records": [
+                {
+                  "district_name": "MAHESANA",
+                  "village_name": "Deriya",
+                  "crop_code": "101300",
+                  "crop_name": "Pearl Millet",
+                  "sown_area": "1.7436",
+                  "village_lgd_code": "509381",
+                  "year": "2023-2024",
+                  "irrigation_type": "\u0aac\u0acb\u0ab0 \u0ab5\u0acd\u0aaf\u0a95\u0acd\u0aa4\u0abf\u0a97\u0aa4 (\u0ab5\u0ac0\u0a9c\u0ab3\u0ac0)",
+                  "survey_status": "Approved",
+                  "area_unit": "Hectare",
+                  "season": "Kharif"
+                }
+              ]
+            }
+          }
+        ],
+        "pagination": {
+          "page_size": 1,
+          "page_number": 1,
+          "total_count": 7913
+        },
+        "locale": "en"
+      }
+    }
+  },
+  "validated_object": {
+    "payload": {
+      "message": {
+        "locale": "en",
+        "transaction_id": "2893b598-3aca-48a4-a7ca-ab1e586a14c1",
+        "pagination": {
+          "page_size": 1,
+          "page_number": 1,
+          "total_count": 7913
+        },
+        "search_response": [
+          {
+            "reference_id": "32a9da1c-1676-468e-b10e-177ee1320fd2",
+            "data": {
+              "reg_record_type": "agristack_croparea_v0_data",
+              "reg_records": [
+                {
+                  "village_lgd_code": "509381",
+                  "area_unit": "Hectare",
+                  "crop_code": "101300",
+                  "survey_status": "Approved",
+                  "sown_area": "1.7436",
+                  "irrigation_type": "\u0aac\u0acb\u0ab0 \u0ab5\u0acd\u0aaf\u0a95\u0acd\u0aa4\u0abf\u0a97\u0aa4 (\u0ab5\u0ac0\u0a9c\u0ab3\u0ac0)",
+                  "year": "2023-2024",
+                  "season": "Kharif",
+                  "village_name": "Deriya",
+                  "crop_name": "Pearl Millet",
+                  "district_name": "MAHESANA"
+                }
+              ]
+            }
+          }
+        ],
+        "correlation_id": "81432f1d-7f9b-41c4-aa03-3ca7c0aa4770"
+      },
+      "header": {
+        "version": "1.0.0",
+        "status_reason_message": "string",
+        "sender_id": "https:agristack.gov.in",
+        "status": "rcvd",
+        "total_count": 1,
+        "completed_count": 1,
+        "is_msg_encrypted": false,
+        "status_reason_code": "rjct.version.invalid",
+        "receiver_id": "registry.example.org",
+        "message_ts": "2022-12-04T18:02:35+00:00",
+        "message_id": "789",
+        "action": "string"
+      },
+      "signature": "signature string"
+    }
+  },
+  "is_validated": true,
+  "validation_error_object": null
+}
