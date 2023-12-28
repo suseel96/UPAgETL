@@ -1,5 +1,5 @@
 # This is a basic workflow to help you get started with Actions
-name: Production ETL
+name: STAGING ETL
 
 # Controls when the workflow will run
 on:
@@ -42,20 +42,20 @@ jobs:
       - name: Copy files via SSH key
         uses: appleboy/scp-action@master
         with:
-          host: ${{ secrets.PRODUCTION_ETL_HOST }}
-          port: ${{ secrets.PRODUCTION_ETL_PORT }}
-          username: ${{ secrets.PRODUCTION_ETL_USERNAME }}
-          key: ${{ secrets.PRODUCTION_ETL_KEY }}
+          host: ${{ secrets.STAGING_ETL_HOST }}
+          port: ${{ secrets.STAGING_ETL_PORT }}
+          username: ${{ secrets.STAGING_ETL_USERNAME }}
+          key: ${{ secrets.STAGING_ETL_KEY }}
           source: "./"
           target: "/home/otsietladm/"
 
       - name: Execute install.sh via SSH key
         uses: appleboy/ssh-action@master
         with:
-          host: ${{ secrets.PRODUCTION_ETL_HOST }}
-          port: ${{ secrets.PRODUCTION_ETL_PORT }}
-          username: ${{ secrets.PRODUCTION_ETL_USERNAME }}
-          key: ${{ secrets.PRODUCTION_ETL_KEY }}
+          host: ${{ secrets.STAGING_ETL_HOST }}
+          port: ${{ secrets.STAGING_ETL_PORT }}
+          username: ${{ secrets.STAGING_ETL_USERNAME }}
+          key: ${{ secrets.STAGING_ETL_KEY }}
           script: |
             cd /home/otsietladm/
             git clean -fd
@@ -64,10 +64,10 @@ jobs:
       - name: Create ENV files via SSH key
         uses: appleboy/ssh-action@master
         with:
-          host: ${{ secrets.PRODUCTION_ETL_HOST }}
-          port: ${{ secrets.PRODUCTION_ETL_PORT }}
-          username: ${{ secrets.PRODUCTION_ETL_USERNAME }}
-          key: ${{ secrets.PRODUCTION_ETL_KEY }}
+          host: ${{ secrets.STAGING_ETL_HOST }}
+          port: ${{ secrets.STAGING_ETL_PORT }}
+          username: ${{ secrets.STAGING_ETL_USERNAME }}
+          key: ${{ secrets.STAGING_ETL_KEY }}
           script: |
               echo "${{ secrets.UTILS_ENV }}" > "/home/otsietladm/etl_utils/.env"
               echo "${{ secrets.EMAIL_CONFIG }}" >> "/home/otsietladm/etl_utils/.env"
@@ -76,8 +76,8 @@ jobs:
       - name: Execute deploy.sh via SSH key
         uses: appleboy/ssh-action@master
         with:
-          host: ${{ secrets.PRODUCTION_ETL_HOST }}
-          port: ${{ secrets.PRODUCTION_ETL_PORT }}
-          username: ${{ secrets.PRODUCTION_ETL_USERNAME }}
-          key: ${{ secrets.PRODUCTION_ETL_KEY }}
+          host: ${{ secrets.STAGING_ETL_HOST }}
+          port: ${{ secrets.STAGING_ETL_PORT }}
+          username: ${{ secrets.STAGING_ETL_USERNAME }}
+          key: ${{ secrets.STAGING_ETL_KEY }}
           script: sh /home/otsietladm/deploy.sh
