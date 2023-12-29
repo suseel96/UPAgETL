@@ -1,11 +1,14 @@
+#!/bin/bash
+
 # Install Virtual Environment
-sudo apt install python3.10-venv -y
+sudo apt install python3.10-venv
 # Install pip
-sudo apt install python3-pip -y
+sudo apt install python3-pip
 # Create Virtual Environment
 python3 -m venv venv
 # Activate Virtual Environment
 source ./venv/bin/activate # In Linux
+
 # venv\Scripts\activate # In Windows
 # Install Dependencies
 venv/bin/pip install -r requirements.txt
