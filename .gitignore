@@ -8,7 +8,7 @@ __pycache__/
 
 # SSH files
 
-home/otsietladm/.ssh/
+/home/otsietladm/.ssh/
 
 # Distribution / packaging
 .Python
