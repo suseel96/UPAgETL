@@ -63,7 +63,7 @@ jobs:
           key: ${{ secrets.STAGING_ETL_KEY }}
           script: |
             cd /home/otsietladm/
-            # git clean -fd
+            git clean -fd
             sh install.sh
 
       - name: Create ENV files via SSH key
