@@ -1,5 +1,3 @@
-#!/bin/bash
-
 # Install Virtual Environment
 sudo apt install python3.10-venv
 # Install pip
